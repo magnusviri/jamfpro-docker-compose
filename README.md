@@ -1,11 +1,11 @@
 # Jamf Pro docker-compose
-Docker Compose file to get Jamf Pro running with minimal effort
+Docker Compose file to get Jamf Pro running with minimal effort.
 
-FYI: Jamf Pro is not free and is not included in this repository. You must purchase it and download it before this will work.
+FYI: Jamf Pro is not free and is not included in this repository. You must purchase it before this will work. Instructions for downloading it are below.
 
 ## Clone Repository
 
-This setup assumes you already have docker-compose and docker (using docker toolbox) installed.
+This setup assumes you already have docker-compose and docker installed.
 
 ```
 git clone github.com/magnusviri/jamfpro-docker-compose.git
