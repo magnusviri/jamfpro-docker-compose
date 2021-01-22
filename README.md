@@ -52,13 +52,22 @@ If you don't want persistent MySQL data, then open up docker-compose.yml and com
 >     volumes:
 >       - ./mysql-data:/var/lib/mysql
 
+## Change the Port
+
+This will open up port 80 on your computer. If you want it on a different port, open the docker-compose.yml file and change the "80" in the following lines to something else.
+
+>     ports:
+>       - "80:8080"
+
+I tried to set this via an environment variable but it didn't work. Maybe I had the syntax wrong.
+
 ## Start
 
 ```
 docker-compose up -d
 ```
 
-Open [http://localhost/](http://localhost/) and wait for it to startup. Follow the setup procedures (here's the [documentation](https://www.jamf.com/resources/product-documentation/) in case you need help). Accept the license agreement, enter your activation code, create an account, and use "http://localhost" for the Jamf Pro URL.
+Open [http://localhost/](http://localhost/) and wait for it to startup. Follow the setup procedures (here's the [documentation](https://www.jamf.com/resources/product-documentation/) in case you need help). Accept the license agreement, enter your activation code, and create an account. For the Jamf Pro URL use "http://localhost" (for local testing only) or whatever your IP is.
 
 ## Debugging
 
@@ -83,7 +92,7 @@ Please let me know if there's anything I'm missing.
 
 ## Credit
 
-I used [Bryson Tyrrell's file](https://gist.github.com/brysontyrrell/95c9492f02a691b3f976830557f6d4ed) as a starting point for this project. Obviously I've significantly modified it.
+I used [Bryson Tyrrell's file](https://gist.github.com/brysontyrrell/95c9492f02a691b3f976830557f6d4ed) as a starting point for this project.
 
 ## License
 
