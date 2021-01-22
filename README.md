@@ -81,6 +81,10 @@ Things I might do.
 
 Please let me know if there's anything I'm missing.
 
+## Credit
+
+I used [Bryson Tyrrell's file](https://gist.github.com/brysontyrrell/95c9492f02a691b3f976830557f6d4ed) as a starting point for this project. Obviously I've significantly modified it.
+
 ## License
 
 MIT License
