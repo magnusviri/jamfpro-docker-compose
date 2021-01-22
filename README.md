@@ -58,13 +58,13 @@ If you don't want persistent MySQL data, then open up docker-compose.yml and com
 docker-compose up -d
 ```
 
-Open [http://localhost/](http://localhost/)
+Open [http://localhost/](http://localhost/) and wait for it to startup. Follow the setup procedures (here's the [documentation](https://www.jamf.com/resources/product-documentation/) in case you need help). Accept the license agreement, enter your activation code, create an account, and use "http://localhost" for the Jamf Pro URL.
 
 ## Debugging
 
 When debugging this, you can quickly undo everything by running this command (after `docker-compose up -d`).
 
-	docker-compose down ; docker image rm jamfpro:10.26.1 ; docker image rm jamfdevops/jamfpro:0.0.12
+	docker-compose down ; docker image rm jamfpro:10.26.1 ; docker image rm jamfdevops/jamfpro:0.0.12 ; rm -r mysql-data/*
 
 ## Roadmap
 
@@ -72,6 +72,12 @@ I plan on eventually using this to deploy my production server. As such, I plan 
 
 - SSL support w/ signed certificates
 - Switch to MySQL 8
+
+Things I might do.
+
+- Automate the setup procedures (this would be for creating Jamf Pro test servers)
+- Support Let's Encrypt
+- Support Distribution Points
 
 Please let me know if there's anything I'm missing.
 
