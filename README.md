@@ -1,3 +1,3 @@
 # Jamf Pro docker-compose
 
-Moved to [/magnusviri/dockerfiles/tree/main/jamfpro](/magnusviri/dockerfiles/tree/main/jamfpro).
+Moved to [https://github.com/magnusviri/jamfpro-docker-compose](https://github.com/magnusviri/jamfpro-docker-compose).
